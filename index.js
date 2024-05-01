@@ -12,28 +12,30 @@ btn.addEventListener('click',()=>{
 
     //プレイヤーの選択肢と敵の選択肢の比較
     if(choices.value==enemy.value){
-        result.textContent="あいこ"
-    }else{
-        if(choices.value=="グー"){
-            //自分がグーを出したとき
-        }
-        if(choices.value=="チョキ"){
-            //自分がチョキを出したとき
-        }
-        if(choices.value=="パー"){
-            //自分がパーを出したとき
-        }
+        result.textContent="あいこ"    
     }else{
         if(choices.value=="グー"){
             if(enemy.value=="チョキ"){
-                rusult
+                result.textContent="勝ち"
+            }
+            if(choices.value=="パー"){
+                result.textContent="負け"
             }
         }
-
-
-
-
-
-
-    }
-})
+        if(choices.value=="チョキ"){
+            if(enemy.value=="パー"){
+                result.textContent="勝ち"
+            }
+            if(enemy.value=="グー"){
+                result.textContent="負け"
+            }
+        }   
+        if(choices.value=="パー"){
+            if(enemy.value=="グー"){
+                result.textContent="勝ち"
+            }
+            if(enemy.value=="チョキ"){
+                result.textContent="負け"
+            } 
+        }   
+    }   } )
