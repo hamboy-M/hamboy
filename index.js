@@ -6,7 +6,7 @@ const result=document.querySelector(".result")
 const arry=["グー","チョキ","パー"]
 //ボタン要素が押されたらイベントを開始
 btn.addEventListener('click',()=>{
-    const random=Math.floor(Math.random()*arry.length(3))
+    const random=Math.floor(Math.random()*arry.length)
     enemy.value=arry[random]
     enemy.value=arry[Math.floor(Math.random())]
 
